@@ -1,0 +1,13 @@
+.nav_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.nav_ul .nav_li {
+  cursor: pointer;
+  list-style: none;
+  flex: 1 1 100px;
+}

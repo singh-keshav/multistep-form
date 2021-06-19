@@ -1,0 +1,70 @@
+.form_fields {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.form_field label {
+  color: black;
+
+  font-family: sans-serif;
+  text-align: left;
+  display: flex;
+}
+
+input {
+}
+
+.form_field input {
+}
+
+.form_field {
+  padding: 10px;
+}
+
+.item1 {
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+.item5 {
+}
+.item6 {
+}
+.item7 {
+}
+.item8 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.item9 {
+  grid-area: 3/2/4/3;
+}
+.item10 {
+  grid-area: 3/3/4/4;
+}
+.item11 {
+  grid-area: 4/1/5/2;
+}
+.item12 {
+  grid-area: 4/2/5/3;
+}
+.form_buttons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.form_buttons button {
+  border: none;
+  background: deepskyblue;
+  margin: 0 10px;
+  border-radius: 2px;
+  padding: 5px;
+  flex: 0 0 100px;
+  color: white;
+}

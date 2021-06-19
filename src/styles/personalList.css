@@ -1,0 +1,68 @@
+.memberlist__card {
+  display: flex;
+  margin: 10px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 3px 1px #cacaca;
+  align-items: center;
+  height: 100px;
+  flex: 0 0 270px;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.memberlist__card__details {
+  padding: 0 10px;
+  text-align: left;
+  flex: 1 0 100px;
+  text-overflow: ellipsis;
+}
+
+.memberlist__card__details h6 {
+  margin: 0px;
+  font-size: 14px;
+}
+.memberlist__card__details p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.memberlist__card_options {
+  align-self: flex-start;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.memberlist__card_options button {
+  border: none;
+  background: none;
+  color: grey;
+  padding: 2px 5px;
+  font-size: 12px;
+  flex: 1 0 10px;
+}
+.card_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.create_member {
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.create_member p {
+  padding: 0px;
+  margin: 0px;
+}
+.next_button {
+  border: none;
+  background: deepskyblue;
+  margin: 0 10px;
+  border-radius: 2px;
+  padding: 5px;
+  flex: 0 1 100px;
+  color: white;
+}
