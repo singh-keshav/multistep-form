@@ -25,7 +25,7 @@ const Card = (props) => {
         <ImageThumb image={photo} />
       </div>
       <div className="memberlist__card__details">
-        <h6>{name}</h6>
+        <h6>{name && name[0].toUpperCase() + name.substring(1)}</h6>
         <p>{email}</p>
       </div>
       <div className="memberlist__card_options">
@@ -54,14 +54,6 @@ export default function PersonalList(props) {
           photo={m.photo}
           create={create}
         />
-        // <div>
-        //   <div>{m.date}</div>
-        //   <div>{m.email}</div>
-        //   {m.photo && <ImageThumb image={m.photo} />}
-        //   {m.photo && <ImageThumb image={m.sign} />}
-
-        //   <br></br>
-        // </div>
       );
     });
     list.push(

@@ -1,13 +1,42 @@
-.nav_ul {
+.navbar {
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  margin: 2px 25px;
+}
+
+.link_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  padding: 10px;
+  cursor: pointer;
+  flex-basis: 100px;
 }
 
-.nav_ul .nav_li {
-  cursor: pointer;
-  list-style: none;
-  flex: 1 1 100px;
+.link_number {
+  width: 30px;
+  height: 30px;
+  background: #a9a9a9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.link_name {
+  padding-left: 10px;
+}
+
+.underline {
+  background-color: rgb(69 166 243 / 30%);
+  height: 2px;
+  position: relative;
+}
+
+.active_tab {
+  background-color: rgb(69 166 243 / 100%);
+  width: 16.66%;
+  position: absolute;
+  height: 2px;
+  transition-duration: 500ms;
 }

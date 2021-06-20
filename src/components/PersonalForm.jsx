@@ -29,12 +29,13 @@ function PersonalForm(props) {
     <div>
       <div className="form_fields">
         <div className="form_field item1">
-          <label className="form-label">name</label>
+          <label className="form-label">Name</label>
           <input
             className="form-control"
             name="name"
             value={formData.name}
             onChange={onChange}
+            placeholder="Name"
           />
         </div>
 
@@ -46,90 +47,99 @@ function PersonalForm(props) {
             type="date"
             value={formData.date}
             onChange={onChange}
+            placeholder="DD/MM/YY"
           />
         </div>
 
         <div className="form_field item3">
-          <label className="form-label">location</label>
+          <label className="form-label">Location</label>
           <input
             className="form-control"
             name="location"
             value={formData.location}
             onChange={onChange}
+            placeholder="Location"
           />
         </div>
 
         <div className="form_field item4">
-          <label className="form-label">occupation</label>
+          <label className="form-label">Occupation</label>
           <input
             className="form-control"
             name="occupation"
             value={formData.occupation}
             onChange={onChange}
+            placeholder="Occupation"
           />
         </div>
 
         <div className="form_field item5">
-          <label className="form-label">phone</label>
+          <label className="form-label">Phone Number</label>
           <input
             className="form-control"
             name="phone"
             value={formData.phone}
             onChange={onChange}
+            placeholder="Phone number"
           />
         </div>
 
         <div className="form_field item6">
-          <label className="form-label">email</label>
+          <label className="form-label">Email</label>
           <input
             className="form-control"
             name="email"
             value={formData.email}
             onChange={onChange}
+            placeholder="Email"
           />
         </div>
 
         <div className="form_field item7">
-          <label className="form-label">sex</label>
+          <label className="form-label">Sex</label>
           <input
             className="form-control"
             name="sex"
             value={formData.sex}
             onChange={onChange}
+            placeholder="Sex"
           />
         </div>
 
         <div className="form_field item8">
-          <label className="form-label">facebook</label>
+          <label className="form-label">Facebook Profile</label>
           <input
             className="form-control"
             name="facebook"
             value={formData.facebook}
             onChange={onChange}
+            placeholder="Facebook Profile"
           />
         </div>
 
         <div className="form_field item9">
-          <label className="form-label">twitter</label>
+          <label className="form-label">Twitter</label>
           <input
             className="form-control"
             name="twitter"
             value={formData.twitter}
             onChange={onChange}
+            placeholder="Twitter profile"
           />
         </div>
         <div className="form_field item10">
-          <label className="form-label">linkdin</label>
+          <label className="form-label">Linkdin</label>
           <input
             className="form-control"
             name="linkdin"
             value={formData.linkdin}
             onChange={onChange}
+            placeholder="Linkdin profile  "
           />
         </div>
 
         <div className="form_field item11" id="inputGroupFile02">
-          <label className="form-label">upload photo</label>
+          <label className="form-label">Upload Photo</label>
           <input
             className=""
             type="file"
@@ -139,7 +149,7 @@ function PersonalForm(props) {
         </div>
 
         <div className="form_field item12">
-          <label className="form-label">upload photo</label>
+          <label className="form-label">Upload Signature</label>
           <input
             className=""
             type="file"

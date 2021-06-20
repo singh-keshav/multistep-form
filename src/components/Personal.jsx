@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import { Route } from "react-router";
 import PersonalForm from "./PersonalForm";
 import PersonalList from "./PersonalList";
-
-// const Member = (memberData) => {
-//   const index = memberData.id;
-//   const name = memberData.name;
-//   const email = memberData.email;
-// };
 
 export default function Personal(props) {
   const formInitialData = {
@@ -39,10 +32,6 @@ export default function Personal(props) {
     setCurrentStep((c) => (c + 1) % 2);
   };
 
-  const listNext = () => {
-    //send data to redux store
-    props.nextStep();
-  };
   const onNext = () => {
     currentStep ? toggelStep() : props.nextStep();
   };
@@ -76,23 +65,23 @@ export default function Personal(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (currIndex < members.length) {
-      // setMembers([...members, (members[currIndex] = formData)]);
       const temp = [...members];
       temp[currIndex] = formData;
       setMembers(temp);
-      console.log("if");
     } else {
       setMembers([...members, formData]);
-      console.log("else block");
     }
     console.log(members);
+
     reset();
+
+    onNext();
   };
 
   const handleFileUpload = (e, destination) => {
     const data = { ...formData };
-    // data.photo = e.target.files[0];
     data[destination] = e.target.files[0];
     setFormData(data);
   };
@@ -104,20 +93,18 @@ export default function Personal(props) {
         formData={formData}
         onChange={onChange}
         handleSubmit={handleSubmit}
-        next={toggelStep}
         handleFileUpload={handleFileUpload}
       />
       <PersonalList
         edit={editMember}
         deleteMember={deleteMember}
-        next={listNext}
         members={members}
         currentStep={currentStep}
         create={createMember}
       />
       <div className="form_buttons">
-        {currentStep ? <button onClick={handleSubmit}>submit</button> : null}
-        <button onClick={onNext}>next</button>
+        {currentStep ? <button onClick={handleSubmit}> SUBMIT</button> : null}
+        <button onClick={onNext}>NEXT</button>
       </div>
     </div>
   );

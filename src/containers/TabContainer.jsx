@@ -1,13 +1,9 @@
-import { set } from "mongoose";
 import React, { useState } from "react";
-import { Link, Route } from "react-router-dom";
 import Assets from "../components/Assets";
 import Expense from "../components/Expense";
 import Income from "../components/Income";
 import Liablity from "../components/Liablity";
 import Personal from "../components/Personal";
-import PersonalForm from "../components/PersonalForm";
-import PersonalList from "../components/PersonalList";
 import Risk from "../components/Risk";
 import "./../styles/tabcontainer.css";
 import Navbar from "./Navbar";
